@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background: #F6F6F6;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header div.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.header-content div.item-left img {
+  width: 210px;
+}
+
+header div.header-content div.item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header-content div.item-right div.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.header-content div.item-right div.menu ul {
+  margin: 0;
+}
+
+header div.header-content div.item-right div.menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header div.header-content div.item-right div.menu ul li:hover a {
+  color: #E4B668;
+}
+
+header div.header-content div.item-right div.menu ul li a {
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-decoration: none;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown {
+  position: relative;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown:hover i {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown:hover ul {
+  display: block;
+  background-color: #455de4;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown ul {
+  display: none;
+  width: 170px;
+  position: absolute;
+  background-color: rgba(219, 241, 240, 0.432);
+  -webkit-box-shadow: 2px 2px #a8c9b4;
+          box-shadow: 2px 2px #a8c9b4;
+  z-index: 1000 !important;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown ul li {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown ul li:hover a {
+  background-color: #1C1C1C;
+  color: #fff;
+}
+
+header div.header-content div.item-right div.menu ul li.dropdown ul li a {
+  font-weight: 300px;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+header div.header-content div.item-right div.pro {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header div.header-content div.item-right button.bars {
+  display: none;
+  padding: 11px 17px;
+  background-color: #1C1C1C;
+  color: #E4B668;
+  border-radius: 6px;
+}
+
+header div.header-content div.item-right button.btn {
+  width: 150px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 5px;
+  padding: 11px;
+  background-color: #1C1C1C;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #E4B668;
+  border: transparent;
+}
+
+@media (max-width: 980px) {
+  header div.header-content div.item-right div.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    width: 200px;
+    height: 50vh;
+    z-index: 20;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #1C1C1C;
+  }
+  header div.header-content div.item-right button.bars {
+    display: block;
+  }
+}
+
+@media (max-width: 980px) {
+  header div.nav-mobile div.menu {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    background-color: transparent !important;
+    border: transparent !important;
+  }
+  header div.nav-mobile div.menu ul li {
+    display: block !important;
+    margin-top: 10px !important;
+  }
+  header div.nav-mobile div.menu ul li a {
+    color: #fff !important;
+  }
+  header div.nav-mobile div.pro {
+    display: block !important;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+::-ms-input-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+input, select, textarea {
+  color: black;
+}
+
+div.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../mixkit-ink-swirling-in-blue-tones-underwater-229-0.jpg");
+  background-size: 100%;
+  margin-top: 90px;
+  height: 100vh;
+}
+
+div.sign div.item {
+  width: 520px;
+  border-radius: 10px;
+  padding: 40px 60px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+div.sign div.item div.title {
+  margin-bottom: 50px;
+}
+
+div.sign div.item div.title h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 134.3%;
+  /* or 43px */
+  color: #da990e;
+  text-align: center;
+}
+
+div.sign div.item div.form {
+  text-align: center;
+}
+
+div.sign div.item div.form input {
+  width: 100%;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px black;
+  padding: 8px;
+}
+
+div.sign div.item div.form button {
+  margin-top: 60px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #1C1C1C;
+  color: #E4B668;
+}
+/*# sourceMappingURL=registr.css.map */
